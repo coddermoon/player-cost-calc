@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+h1{
+     font-family: 'Berkshire Swash', cursive;
+     font-size: 4.75rem;
+     color: #FF5E19;
+}
+
+/* hero section css */
+
+.hero-section{
+    height: 80vh;
+}
