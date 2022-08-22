@@ -57,14 +57,14 @@
                                 <div class="container text-center">
                                     <div class="flex justify-between items-center mx-5">
 
-                                        <span class="font-medium">Per Player:</span> <input id="income" type="number"
+                                        <span class="font-medium">Per Player:</span> <input id="per-player" type="number"
                                             class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
 
                                     </div>
 
 
-                                    <button id="calculate"
-                                        class="text-center inline-block my-5 bg-blue-500 mx-auto text-white px-5 py-2 ">Calculate</button>
+                                    <button id="player-calculation"
+                                        class="text-center inline-block my-5 bg-blue-500 mx-auto text-white px-5 py-2 " onclick="totalPlayerCost()">Calculate</button>
                                 </div>
                             </div>
                             <div class="inputs">
@@ -72,21 +72,21 @@
                                 
                                     <div class="flex justify-between items-center mx-5 my-2">
 
-                                        <span class="font-medium">Player Expenses:</span> <input id="income" type="number" class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
+                                        <span class="font-medium">Player Expenses:</span> <input id="player-expence" type="number" class="bg-white-500 w-75 text-sm text-slate-500 p-3" placeholder="10000" disabled>
             
                                        </div>
 
                             
                                 <div class="flex justify-between items-center mx-5 my-2">
 
-                                    <span class="font-medium">Manager:</span> <input id="income" type="number"
+                                    <span class="font-medium">Manager:</span> <input id="manager" type="number"
                                         class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
 
                                 </div>
                                 <div class="container text-center my-3">
                                     <div class="flex justify-between items-center mx-5">
 
-                                        <span class="font-medium">Couch:</span> <input id="income" type="number" class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
+                                        <span class="font-medium">Couch:</span> <input id="couch" type="number" class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
             
                                        </div>
                                     <button id="calculate"
@@ -99,7 +99,7 @@
 
 
                                     <h4 class="text-center font-bold  text-xl my-2">Calculate Total : <span
-                                            id="saving-amount">00 </span>Tk</h4>
+                                            id="total-cost">00 </span>Tk</h4>
 
                                 </div>
 

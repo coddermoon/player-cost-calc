@@ -38,11 +38,13 @@ article.matches {
 
 
 /* sidebar */
-aside.menu {
-    
-}
+
 
 .main{
     display: grid;
     grid-template-columns: auto 260px ;
+}
+
+.disable{
+    background: gray;
 }
