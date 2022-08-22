@@ -3,7 +3,7 @@
 const card = (player)=>{
     const div = document.createElement('div');
     div.innerHTML = `
-    <div class="max-w-sm rounded overflow-hidden shadow-lg border-solid">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <img class="w-full" src="${player.imgUrl}" alt="Sunset in the mountains">
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">${player.name}</div>
@@ -15,7 +15,7 @@ const card = (player)=>{
       
     </div>
     <div class="">
-    <button id="calculate" class="text-center w-80 block my-5 bg-blue-500 mx-auto text-white px-5 py-2 ">Calculate</button>
+    <button id="calculate" class="text-center w-80 block my-5 bg-blue-500 mx-auto text-white px-5 py-2 "onclick="addToCart(event)">Calculate</button>
 
     </div>
   </div>
@@ -23,4 +23,13 @@ const card = (player)=>{
     
     `
     document.getElementById('matches').appendChild(div)
+
+    }
+
+    // create a list items
+    const list =(playerName)=>{
+
+   
+
+ 
     }
