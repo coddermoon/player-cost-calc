@@ -53,21 +53,19 @@ const parseIntoNumber = (id) => {
 const  totalPlayerCost = ()=>{
    const totalPlayerCost = parseIntoNumber('per-player')*count
    document.getElementById('player-expence').value = totalPlayerCost
+
+   
    
 }
 
 
 
-const calculation = () => {
+const calcTotal = () => {
 
    const totalExp = parseIntoNumber("player-expence") + parseIntoNumber("manager") + parseIntoNumber("couch")
    totalCost.innerText = totalExp;
 
-   const income = parseIntoNumber(incomeValue);
-   const totalBalance = income - totalExp;;
-   balance.innerText = totalBalance;
-   remainingBalance.innerText = totalBalance
-   const totalBalanceNumber = parseFloat(totalBalance)
+  
 
 if (isNaN(totalBalanceNumber)) {
   alert('its be a number')
