@@ -21,3 +21,28 @@ h1{
 .hero-section{
     height: 80vh;
 }
+
+article.matches {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.match {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 40px #ddd;
+}
+
+
+
+/* sidebar */
+aside.menu {
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto 260px ;
+}
