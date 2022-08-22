@@ -21,30 +21,18 @@ h1{
 .hero-section{
     height: 80vh;
 }
+img{
+    width: 100%;
+}
 
-article.matches {
+.players{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    margin-bottom: 50px;
-}
-.match {
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 2px 2px 40px #ddd;
+    grid-template-columns: 3fr 1fr;
 }
 
 
-
-/* sidebar */
-
-
-.main{
-    display: grid;
-    grid-template-columns: auto 260px ;
-}
-
-.disable{
-    background: gray;
+.menu {
+    border-left: 3px solid #fff;
+    position: sticky;
+    top: 0;
 }

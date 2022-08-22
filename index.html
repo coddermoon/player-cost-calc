@@ -20,96 +20,98 @@
 
 <body>
 
-    <header class="text-center d-flex align-items-center  justify-content-center hero-section">
+    <!-- <header class="text-center d-flex align-items-center  justify-content-center hero-section">
         <div class="content">
             <h1>hello World</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem, perferendis veritatis et sed
                 pariatur velit eveniet eum quibusdam nisi.</p>
         </div>
-    </header>
+    </header> -->
     <!-- main playewr section -->
     <main>
         <section class="players">
-            <div class="container mx-auto">
-                <div class="main">
 
-                    <article class="matches grid grid-cols-3 gap-4" id="matches">
+            <div class="  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7" id="players">
 
 
+            </div>
 
-                    </article>
+            <!-- sidebar -->
+            <aside class="menu mx-auto">
+                <div class="player-lists">
+                    <h4 class="text-center font-bold  text-xl my-2">Selected Player</h4>
+                    <div class="list w-80 mx-auto">
+                        <div class="container ">
+                            <ol id="players-list">
 
-                    <!-- sidebar -->
-                    <aside class="menu mx-auto">
-                        <div class="player-lists">
-                            <h4 class="text-center font-bold  text-xl my-2">Selected Player</h4>
-                            <div class="list w-80 mx-auto">
-                                <div class="container ">
-                                    <ol id="players-list">
-                                        
-                                    </ol>
-                                </div>
-                            </div>
+                            </ol>
                         </div>
-                        <div>
-                            <div class="inputs">
-                                <h4 class="text-center font-bold  text-xl my-2">Budget</h4>
-                                <div class="container text-center">
-                                    <div class="flex justify-between items-center mx-5">
+                    </div>
 
-                                        <span class="font-medium">Per Player:</span> <input id="per-player" type="number"
-                                            class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
+                    <div>
+                        <div class="inputs">
+                            <h4 class="text-center font-bold  text-xl my-2">Budget</h4>
+                            <div class="container text-center">
+                                <div class="flex justify-between items-center mx-5">
 
-                                    </div>
-
-
-                                    <button id="player-calculation"
-                                        class="text-center inline-block my-5 bg-blue-500 mx-auto text-white px-5 py-2 " onclick="totalPlayerCost()">Calculate</button>
-                                </div>
-                            </div>
-                            <div class="inputs">
-                                <h4 class="text-center font-bold  text-xl my-2">Expenses</h4>
-                                
-                                    <div class="flex justify-between items-center mx-5 my-2">
-
-                                        <span class="font-medium">Player Expenses:</span> <input id="player-expence" type="number" class="bg-white-500 w-75 text-sm text-slate-500 p-3" placeholder="10000" disabled>
-            
-                                       </div>
-
-                            
-                                <div class="flex justify-between items-center mx-5 my-2">
-
-                                    <span class="font-medium">Manager:</span> <input id="manager" type="number"
+                                    <span class="font-medium">Per Player:</span> <input id="per-player" type="number"
                                         class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
 
                                 </div>
-                                <div class="container text-center my-3">
-                                    <div class="flex justify-between items-center mx-5">
-
-                                        <span class="font-medium">Couch:</span> <input id="couch" type="number" class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
-            
-                                       </div>
-                                    <button id="calculate"
-                                        class="w-80 mx-3  text-center inline-block my-5 bg-blue-500  text-white px-5 py-2 " onclick="calcTotal()">Calculate</button>
-                                    <br>
 
 
-                                    <p class="text-gray-700 " id="massage"></p>
-
-
-
-                                    <h4 class="text-center font-bold  text-xl my-2">Calculate Total : <span
-                                            id="total-cost">00 </span>Tk</h4>
-
-                                </div>
-
+                                <button id="player-calculation"
+                                    class="text-center inline-block my-5 bg-blue-500 mx-auto text-white px-5 py-2 "
+                                    onclick="totalPlayerCost()">Calculate</button>
                             </div>
                         </div>
-                    </aside>
-                </div>
+                        <div class="inputs">
+                            <h4 class="text-center font-bold  text-xl my-2">Expenses</h4>
+
+                            <div class="flex justify-between items-center mx-5 my-2">
+
+                                <span class="font-medium">Player Expenses:</span> <input id="player-expence"
+                                    type="number" class="bg-white-500 w-75 text-sm text-slate-500 p-3"
+                                    placeholder="10000" disabled>
+
+                            </div>
+
+
+                            <div class="flex justify-between items-center mx-5 my-2">
+
+                                <span class="font-medium">Manager:</span> <input id="manager" type="number"
+                                    class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
+
+                            </div>
+                            <div class="container text-center my-3">
+                                <div class="flex justify-between items-center mx-5">
+
+                                    <span class="font-medium">Couch:</span> <input id="couch" type="number"
+                                        class="w-75 text-sm text-slate-500 p-3" placeholder="10000">
+
+                                </div>
+                                <button id="calculate"
+                                    class="inline-block  mx-3  text-center inline-block my-5 bg-blue-500  text-white px-5 py-2 "
+                                    onclick="calcTotal()">Calculate</button>
+                                <br>
+
+
+                                <p class="text-gray-700 " id="massage"></p>
+
+
+
+                                <h4 class="text-center font-bold  text-xl my-2">Calculate Total : <span
+                                        id="total-cost">00 </span>Tk</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+            </aside>
+            </div>
             </div>
         </section>
-        <hr class="divide-inherit">
+
     </main>
 
 

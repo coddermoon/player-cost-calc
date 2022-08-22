@@ -16,7 +16,8 @@ const addToCart = (event)=>{
    
   count = count + 1
 
-   const playerName = event.target.parentNode.parentNode.children[1].children[0].innerText
+   const playerName = event.target.parentNode.children[1].innerText
+   
    
  const li = document.createElement('li')
    li.innerHTML = `
