@@ -3,7 +3,7 @@
 const card = (player)=>{
     const div = document.createElement('div');
     div.innerHTML = `
-    <div class=" p-4 shadow-xl rounded-xl mx-auto ">
+    <div class="player p-4 shadow-xl rounded-xl mx-auto ">
             <div class="p-5 bg-slate-200 rounded-xl mx-auto">
                 <img class="mx-auto" src="${player.imgUrl}" alt="jacket">
             </div>
