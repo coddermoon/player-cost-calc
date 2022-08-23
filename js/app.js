@@ -29,7 +29,8 @@ const addToCart = (event)=>{
   
 const disableBtn = event.target.setAttribute('disabled', '');
  
-
+const setClass = event.target.classList.add("disable-btn")
+console.log(setClass)
 
 }
 

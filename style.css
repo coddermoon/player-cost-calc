@@ -66,3 +66,9 @@ img{
 .h-80{
     height: 80vh;
 }
+
+/* disable class */
+
+.disable-btn{
+    background-color: #ddd !important
+}
