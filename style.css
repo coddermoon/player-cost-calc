@@ -22,9 +22,22 @@ h1{
     max-width: 100%;
     height: 100%;
     width: auto;
+    position: relative;
 }
+
 .cart-psg img{
     width: 100%;
+}
+
+.content{
+    position: relative;
+}
+
+.content img {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: auto;
 }
 img{
     width: 100%;
