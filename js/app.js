@@ -24,13 +24,20 @@ const addToCart = (event)=>{
    <li class="font-bold text-xl py-3 border-solid">${count}.  ${playerName}</li>
    
    `
-  
+//   check condition
+
+if (count <=5) {
    document.getElementById('players-list').appendChild(li)
   
 const disableBtn = event.target.setAttribute('disabled', '');
  
 const setClass = event.target.classList.add("disable-btn")
-console.log(setClass)
+}else{
+  alert('maxium 5 player is added')
+}
+
+   
+
 
 }
 
