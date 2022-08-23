@@ -132,3 +132,11 @@ toast massage
 		opacity: 0;
 	}
 }
+
+/* resopnsive */
+@media (max-width:768px) {
+    .players{
+        grid-template-columns: auto; 
+    } 
+}
+
