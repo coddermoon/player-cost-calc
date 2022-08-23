@@ -18,8 +18,13 @@ h1{
 
 /* hero section css */
 
-.hero-section{
-    height: 80vh;
+.hero-section img {
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+}
+.cart-psg img{
+    width: 100%;
 }
 img{
     width: 100%;
@@ -43,4 +48,8 @@ img{
 
 .border-solid{
     border: 1px solid;
+}
+
+.h-80{
+    height: 80vh;
 }
