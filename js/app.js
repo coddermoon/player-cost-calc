@@ -37,19 +37,24 @@ const showMassage = (text, status) => {
 
 const addToCart = (event) => {
 
-   count = count + 1
+   count++
 
    const playerName = event.target.parentNode.children[1].innerText
 
 
    const li = document.createElement('li')
+   
    li.innerHTML = `
    <li class="font-bold text-xl py-3 border-solid">${count}.  ${playerName}</li>
    
    `
+  
    //   check condition
 
    if (count <= 5) {
+
+      
+      document.getElementById('selected').innerText= count
       document.getElementById('players-list').appendChild(li)
 
       const disableBtn = event.target.setAttribute('disabled', '');
@@ -60,6 +65,8 @@ const addToCart = (event) => {
       const setClass = event.target.classList.add("disable-btn")
    } else {
       showMassage('you Can Add Maximum 5 player', 'danger')
+     return
+      
    }
 
 
@@ -84,13 +91,7 @@ const parseIntoNumber = (id) => {
 
 }
 
-const totalPlayerCost = () => {
-   const totalPlayerCost = parseIntoNumber('per-player') * count
-   document.getElementById('player-expence').value = totalPlayerCost
 
-
-
-}
 
 // total calculation cost and added to dom
 
@@ -111,3 +112,18 @@ const calcTotal = () => {
 }
 
 
+const totalPlayerCost = () => {
+let pers = 0
+   if (count <=5) {
+      pers = count
+   }else{
+      pers = 5
+   }
+  
+ 
+      const totalPlayerCost = parseIntoNumber('per-player') * pers
+      document.getElementById('player-expence').value = totalPlayerCost
+   
+   
+   
+   }

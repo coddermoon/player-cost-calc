@@ -37,4 +37,22 @@ const players = [
         Assist:"120",
         imgUrl:"../images/players/RenatoSanches.png"
     },
+    {
+        name:"Keylor Navas",
+        goals:"36",
+        Assist:"120",
+        imgUrl:"../images/players/kay.jpg"
+    },
+    {
+        name:"Achraf Hakimi",
+        goals:"36",
+        Assist:"120",
+        imgUrl:"../images/players/hakim.jpg"
+    },
+    {
+        name:"Mauro Icardi",
+        goals:"36",
+        Assist:"120",
+        imgUrl:"../images/players/download.jpg"
+    },
 ]
